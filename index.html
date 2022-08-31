@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Punto Flotante </title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/nprogress.css" rel="stylesheet">
+    <link href="css/custom.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="#" class="site_title"><span class="nav-titulo">ARQ. DE COMPUTADORAS</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- informacion general -->
+            <div class="profile clearfix">
+              <div class="profile">
+                <img src="img/arqui.jpg" class="profile-img">
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <!-- /informacion general -->
+
+            <br />
+
+            <!-- Menu lateral -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>Punto Flotante</h3>
+                <ul class="nav side-menu">
+                  <li><a><i class="fa fa-users"></i> Integrantes <span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                      
+                      <li><a href="#">Ayala Diaz Alexis</a></li>
+                      <li><a href="#">Garcia Jibaja Jeffrey</a></li>
+                      <li><a href="#">Nima Velasques Yessenia</a></li>
+                      <li><a href="#">Purihuaman Cespedes Dawer</a></li>
+                      <li><a href="#">Terrones Rivera Alex</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- /Menu lateral -->
+            
+          </div>
+        </div>
+
+        <!-- navegación superior -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- /navegación superior -->
+
+        <!-- contenido de la pagina -->
+        <div class="right_col" role="main">
+          <div class="">
+            <div class="page-title">
+              <div class="title_left">
+                <h3 class="main-title">CONVERSIÓN</h3>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Decimal a Punto Flotante</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    <form id="form-decimal" data-parsley-validate class="form-horizontal form-label-left">
+
+                      <div class="form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Número Decimal
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input type="text" id="txtIngresoNumero" required="required" class="form-control col-md-7 col-xs-12" placeholder="Ingrese su número ...">
+                          <span class="form-group-span" id="msg-span"></span>
+                        </div>
+                      </div>
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                          <button type="button" class="btn btn-success" id="btn-convertir">Convertir</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="x_panel">
+                  <div class="x_title">
+                    <h2>Método</h2>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="x_content">
+                    
+                    <div class="" role="tabpanel" data-example-id="togglable-tabs">
+                      <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">General</a>
+                        </li>
+                        <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">IEEE-754</a>
+                        </li>
+                      </ul>
+                      <div id="myTabContent" class="tab-content">
+
+                        <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
+
+                          <div class="col-xs-12" style="border:0px solid #e5e5e5;">
+                            <h3 class="prod_title">Método General</h3>
+                            <!-- acordeon -->
+                            <div class="accordion" id="accordion1" role="tablist" aria-multiselectable="true">
+                              <div class="panel">
+                                <a class="panel-heading" role="tab" data-toggle="collapse" data-parent="#accordion1" href="#collapse1" aria-expanded="true">
+                                  <h4 class="panel-title">De 32 bits</h4>
+                                </a>
+                                <div id="collapse1" class="panel-collapse collapse" role="tabpanel">
+                                  <div class="panel-body cont-list">
+                                    <!-- Met. general de 32 bits -->
+                                    <div class="">
+                                      <div class="row form-horizontal form-label-left">
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-3 col-xs-12" for="Signo">Signo
+                                          </label>
+                                          <div class="col-sm-6 col-xs-12">
+                                            <input type="text" id="txtSignoSP" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-3 col-xs-12" for="txtExponenteSP">Exponente
+                                          </label>
+                                          <div class="col-sm-6 col-xs-12">
+                                            <input type="text" id="txtExponenteSP" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-3 col-xs-12" for="txtMantisaSP">Mantisa
+                                          </label>
+                                          <div class="col-sm-6 col-xs-12">
+                                            <input type="text" id="txtMantisaSP" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="ln_solid"></div>
+                                      <p id="pSP" class="margin-top"></p>
+                                    </div>
+                                    <!-- /Met. general de 32 bits -->
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel">
+                                <a class="panel-heading" role="tab" data-toggle="collapse" data-parent="#accordion1" href="#collapse2" aria-expanded="false">
+                                  <h4 class="panel-title">De 64 bits</h4>
+                                </a>
+                                <div id="collapse2" class="panel-collapse collapse" role="tabpanel">
+                                  <div class="panel-body">
+                                    <!-- Met. general de 64 bits -->
+                                    <div class="">
+                                      <div class="row form-horizontal form-label-left">
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-3 col-xs-12" for="txtSignoDP">Signo
+                                          </label>
+                                          <div class="col-sm-6 col-xs-12">
+                                            <input type="text" id="txtSignoDP" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-3 col-xs-12" for="txtExponenteDP">Exponente
+                                          </label>
+                                          <div class="col-sm-6 col-xs-12">
+                                            <input type="text" id="txtExponenteDP" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-3 col-xs-12" for="txtMantisaDP">Mantisa
+                                          </label>
+                                          <div class="col-sm-6 col-xs-12">
+                                            <input type="text" id="txtMantisaDP" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="ln_solid"></div>
+                                      <p id="pDP" class="margin-top"></p>
+                                    </div>
+                                    <!-- /Met. general de 64 bits -->
+                                  </div>
+                                </div>
+                              </div>
+      
+                            </div>
+                            <!-- /acordeon -->
+                          </div>
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
+                          
+                          <div class="col-xs-12" style="border:0px solid #e5e5e5;">
+                            <h3 class="prod_title">Método IEEE-754</h3>
+                            <!-- acordeon -->
+                            <div class="accordion" id="accordion2" role="tablist" aria-multiselectable="true">
+                              <div class="panel">
+                                <a class="panel-heading" role="tab" data-toggle="collapse" data-parent="#accordion2" href="#collapse3" aria-expanded="false">
+                                  <h4 class="panel-title">De 32 bits</h4>
+                                </a>
+                                <div id="collapse3" class="panel-collapse collapse" role="tabpanel">
+                                  <div class="panel-body cont-list">
+                                    <!-- Met. IEEE-74 de 32 bits -->
+                                    <div class="">
+                                      <div class="row form-horizontal form-label-left">
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-3 col-xs-12" for="txtSignoIEEE">Signo
+                                          </label>
+                                          <div class="col-sm-6 col-xs-12">
+                                            <input type="text" id="txtSignoIEEE" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-3 col-xs-12" for="txtExponenteIEEE">Exponente
+                                          </label>
+                                          <div class="col-sm-6 col-xs-12">
+                                            <input type="text" id="txtExponenteIEEE" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-3 col-xs-12" for="txtMantisaIEEE">Mantisa
+                                          </label>
+                                          <div class="col-sm-6 col-xs-12">
+                                            <input type="text" id="txtMantisaIEEE" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="ln_solid"></div>
+                                      <p id="pIE" class="margin-top"></p>
+                                    </div>
+                                    <!-- /Met. IEEE-74 de 32 bits -->
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel">
+                                <a class="panel-heading" role="tab" data-toggle="collapse" data-parent="#accordion2" href="#collapse4" aria-expanded="false">
+                                  <h4 class="panel-title">De 64 bits</h4>
+                                </a>
+                                <div id="collapse4" class="panel-collapse collapse" role="tabpanel">
+                                  <div class="panel-body">
+                                    <!-- Met. IEEE-74 de 64 bits -->
+                                    <div class="">
+                                      <div class="row form-horizontal form-label-left">
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-3 col-xs-12" for="txtSignoIEEE64">Signo
+                                          </label>
+                                          <div class="col-sm-6 col-xs-12">
+                                            <input type="text" id="txtSignoIEEE64" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-3 col-xs-12" for="txtExponenteIEEE64">Exponente
+                                          </label>
+                                          <div class="col-sm-6 col-xs-12">
+                                            <input type="text" id="txtExponenteIEEE64" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <label class="control-label col-sm-3 col-xs-12" for="txtMantisaIEEE64">Mantisa
+                                          </label>
+                                          <div class="col-sm-6 col-xs-12">
+                                            <input type="text" id="txtMantisaIEEE64" class="form-control col-md-7 col-xs-12" placeholder="" readonly>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="ln_solid"></div>
+                                      <p id="pIE64" class="margin-top"></p>
+                                    </div>
+                                    <!-- /Met. IEEE-74 de 64 bits -->
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                            <!-- /acordeon -->
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /contenido de la pagina -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- NProgress -->
+    <script src="js/nprogress.js"></script>
+    <!-- tema -->
+    <script src="js/custom.min.js"></script>
+
+    <script src="js/convertir.js"></script>
+  </body>
+</html>
